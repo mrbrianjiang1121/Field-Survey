@@ -9,19 +9,21 @@
 import Foundation
 
 struct FieldSurveyEvent {
+    let classification: String
     let title: FieldSurvey
     let description: String
     let date: Date
     
-    init(title: FieldSurvey, description: String, date: Date) {
+    init(classification: String, title: FieldSurvey, description: String, date: Date) {
+        self.classification = classification
         self.title = title
         self.description = description
         self.date = date
     }
     
-    init?(title: String, description: String, date: Date) {
+    init?(classification: String, title: String, description: String, date: Date) {
         if let title = FieldSurvey(rawValue: title) {
-            self.init(title: title, description: description, date: date)
+            self.init(classification: classification, title: title, description: description, date: date)
         } else {
             return nil
         }
