@@ -23,20 +23,19 @@ class FieldSurveyParser {
             if let loader = root["loader"] as? [Any] {
                 for load in loader {
                     if let load = load as? [String: String] {
-                        if let classification = load["classification"],
+                        if let classificationName = load["classification"],
                         let title = load["title"],
                         let description = load["description"],
                         let dateString = load["date"],
                         let date = dateFormatter.date(from: dateString) {
                             
-                            if let fieldsurveyEvent = FieldSurveyEvent(classification: classification, title: title, description: description, date: date) {
+                            if let fieldsurveyEvent = FieldSurveyEvent(classificationName: classificationName, title: title, description: description, date: date) {
                                 fieldsurveys.append(fieldsurveyEvent)
                             }
                         }
                     }
                 }
             }
-        
         }
         
         return fieldsurveys

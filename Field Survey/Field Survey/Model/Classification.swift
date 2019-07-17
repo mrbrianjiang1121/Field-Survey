@@ -1,6 +1,6 @@
 //
-//  FieldSurvey.swift
-//  Field Survey
+//  Classification.swift
+//  Classification
 //
 //  Created by Brian Jiang on 7/14/19.
 //  Copyright © 2019 Brian Jiang. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum FieldSurvey: String {
+enum Classification: String {
     case amphibian
     case bird
     case fish

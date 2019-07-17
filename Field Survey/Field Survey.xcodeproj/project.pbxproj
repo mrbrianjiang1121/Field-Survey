@@ -12,7 +12,7 @@
 		D300399F22DB866C00557C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D300399E22DB866C00557C53 /* Assets.xcassets */; };
 		D30039A222DB866C00557C53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30039A022DB866C00557C53 /* LaunchScreen.storyboard */; };
 		D30039AB22DB8C0200557C53 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = D30039AA22DB8C0200557C53 /* field_observations.json */; };
-		D30039AD22DB8DBE00557C53 /* FieldSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30039AC22DB8DBE00557C53 /* FieldSurvey.swift */; };
+		D30039AD22DB8DBE00557C53 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30039AC22DB8DBE00557C53 /* Classification.swift */; };
 		D30039AF22DB904E00557C53 /* FieldSurveyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30039AE22DB904E00557C53 /* FieldSurveyEvent.swift */; };
 		D30039B122DBFC0D00557C53 /* FieldSurveyParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30039B022DBFC0D00557C53 /* FieldSurveyParser.swift */; };
 		D30039B322DC05E200557C53 /* FieldSurveyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30039B222DC05E200557C53 /* FieldSurveyLoader.swift */; };
@@ -29,7 +29,7 @@
 		D30039A122DB866C00557C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D30039A322DB866C00557C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D30039AA22DB8C0200557C53 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
-		D30039AC22DB8DBE00557C53 /* FieldSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurvey.swift; sourceTree = "<group>"; };
+		D30039AC22DB8DBE00557C53 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
 		D30039AE22DB904E00557C53 /* FieldSurveyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyEvent.swift; sourceTree = "<group>"; };
 		D30039B022DBFC0D00557C53 /* FieldSurveyParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyParser.swift; sourceTree = "<group>"; };
 		D30039B222DC05E200557C53 /* FieldSurveyLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyLoader.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D30039AA22DB8C0200557C53 /* field_observations.json */,
-				D30039AC22DB8DBE00557C53 /* FieldSurvey.swift */,
+				D30039AC22DB8DBE00557C53 /* Classification.swift */,
 				D30039AE22DB904E00557C53 /* FieldSurveyEvent.swift */,
 				D30039B022DBFC0D00557C53 /* FieldSurveyParser.swift */,
 				D30039B222DC05E200557C53 /* FieldSurveyLoader.swift */,
@@ -165,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D30039AD22DB8DBE00557C53 /* FieldSurvey.swift in Sources */,
+				D30039AD22DB8DBE00557C53 /* Classification.swift in Sources */,
 				D30039B122DBFC0D00557C53 /* FieldSurveyParser.swift in Sources */,
 				D30039AF22DB904E00557C53 /* FieldSurveyEvent.swift in Sources */,
 				D3BC24E022DCBE3D00DA658D /* FieldSurveyDetailViewController.swift in Sources */,

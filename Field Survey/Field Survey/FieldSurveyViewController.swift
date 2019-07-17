@@ -40,8 +40,8 @@ class FieldSurveyViewController: UIViewController, UITableViewDelegate, UITableV
         
         if let cell = cell as? FieldSurveyTableViewCell {
             let FieldSurveyEvent = fieldSurvey[indexPath.row]
-            cell.FieldSurveyIconImageView.image = FieldSurveyEvent.title.image
-            cell.titleLabel.text = FieldSurveyEvent.title.rawValue
+            cell.FieldSurveyIconImageView.image = FieldSurveyEvent.classification.image
+            cell.titleLabel.text = FieldSurveyEvent.title
             cell.dateLabel.text = dateFormatter.string(from: FieldSurveyEvent.date)
         }
         

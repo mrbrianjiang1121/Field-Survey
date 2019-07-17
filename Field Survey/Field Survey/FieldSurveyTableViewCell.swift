@@ -12,6 +12,7 @@ class FieldSurveyTableViewCell: UITableViewCell {
     @IBOutlet weak var FieldSurveyIconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

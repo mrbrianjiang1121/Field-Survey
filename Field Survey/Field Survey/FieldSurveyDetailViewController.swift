@@ -19,13 +19,17 @@ class FieldSurveyDetailViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
         
-        animalIconImageView.image = fieldSurveyEvent?.title.image
+        self.title = "Observation"
+        
+        animalIconImageView.image = fieldSurveyEvent?.classification.image
+        titleLabel.text = fieldSurveyEvent?.title
         descriptionLabel.text = fieldSurveyEvent?.description
         
         if let date = fieldSurveyEvent?.date {
