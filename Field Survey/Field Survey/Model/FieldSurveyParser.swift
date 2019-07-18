@@ -9,24 +9,24 @@
 import Foundation
 
 class FieldSurveyParser {
+    static let dateFormatter = DateFormatter()
     class func parse(_ data: Data) -> [FieldSurveyEvent] {
-        let dateFormatter = DateFormatter()
         
         var fieldsurveys = [FieldSurveyEvent]()
         dateFormatter.dateFormat = "YYYY-MM-dd HH:mm"
         
             if let json = try? JSONSerialization.jsonObject(with: data, options: []),
             let root = json as? [String: Any],
-            let status = root["Status"] as? String,
-            status == "ok"
-        {
-            if let loader = root["loader"] as? [Any] {
-                for load in loader {
-                    if let load = load as? [String: String] {
-                        if let classificationName = load["classification"],
-                        let title = load["title"],
-                        let description = load["description"],
-                        let dateString = load["date"],
+            let status = root["status"] as? String,
+            status == "ok" {
+                
+            if let observations = root["observations"] as? [Any] {
+                for observation in observations {
+                    if let observation = observation as? [String: String] {
+                        if let classificationName = observation["classification"],
+                        let title = observation["title"],
+                        let description = observation["description"],
+                        let dateString = observation["date"],
                         let date = dateFormatter.date(from: dateString) {
                             
                             if let fieldsurveyEvent = FieldSurveyEvent(classificationName: classificationName, title: title, description: description, date: date) {
